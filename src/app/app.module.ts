@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,9 +14,10 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
     ErrorPageComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
